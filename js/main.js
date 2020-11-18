@@ -1,8 +1,10 @@
 const panels = document.querySelectorAll('.panel');
 
-    function toggleOpen() {
-      this.classList.toggle('open');
-    }
+function toggleOpen() {
+  panels.forEach(panel => panel.classList.remove("open"));
+  this.classList.add("open");
+}
+
 
     function toggleActive(e) {
       if (e.propertyName.includes('flex')) {
