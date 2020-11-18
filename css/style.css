@@ -1,5 +1,5 @@
 html {
-  box-sizing: border-box;
+ 
   background: #ffc600;
   font-family: "helvetica neue";
   font-size: 20px;
@@ -13,7 +13,7 @@ body {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 .panels {
@@ -84,7 +84,7 @@ h1 {
   transform: translateY(0);
 }
 
-.panel p {
+.panel span {
   text-transform: uppercase;
   font-family: "Amatic SC", cursive;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
@@ -101,7 +101,7 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
-  .panel p {
+  .panel span {
     font-size: 1em;
   }
 }
