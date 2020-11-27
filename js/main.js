@@ -5,13 +5,10 @@ function toggleOpen() {
   this.classList.add("open");
 }
 
-function toggleActive(e) {
-  if (e.propertyName.includes("flex")) {
+function toggleActive() {
+    panels.forEach((panel) => panel.classList.remove("open-active"));
     this.classList.toggle("open-active");
-  }
 }
 
 panels.forEach((panel) => panel.addEventListener("click", toggleOpen));
-panels.forEach((panel) =>
-  panel.addEventListener("transitionend", toggleActive)
-);
+panels.forEach((panel) => panel.addEventListener("click", toggleActive));
