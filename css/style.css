@@ -1,5 +1,4 @@
 html {
- 
   background: #ffc600;
   font-family: "helvetica neue";
   font-size: 20px;
@@ -31,8 +30,6 @@ h1 {
   color: white;
   text-align: center;
   align-items: center;
-  /* Safari transitionend event.propertyName === flex */
-  /* Chrome + FF transitionend event.propertyName === flex-grow */
   transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
     flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
   font-size: 20px;
@@ -60,7 +57,6 @@ h1 {
   background-image: url(https://deiz.by/image/cache/catalog/HYPE/maska/maski_by_44673031_281093859205409_4752926421229948158_n-1500x1500.jpg);
 }
 
-/* Flex Items */
 .panel > * {
   margin: 0;
   width: 100%;
@@ -91,7 +87,7 @@ h1 {
   font-size: 2em;
 }
 
-.panel p:nth-child(2) {
+.panel span:nth-child(2) {
   font-size: 4em;
 }
 

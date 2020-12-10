@@ -6,8 +6,8 @@ function toggleOpen() {
 }
 
 function toggleActive() {
-    panels.forEach((panel) => panel.classList.remove("open-active"));
-    this.classList.toggle("open-active");
+  panels.forEach((panel) => panel.classList.remove("open-active"));
+  this.classList.toggle("open-active");
 }
 
 panels.forEach((panel) => panel.addEventListener("click", toggleOpen));
